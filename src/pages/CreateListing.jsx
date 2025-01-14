@@ -101,7 +101,7 @@ export default function CreateListing() {
       setLoading(true);
       setError(false);
 
-      const res = await fetch('/api/listing/create', {
+      const res = await fetch('https://cozycorner-backend.onrender.com/api/listing/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
